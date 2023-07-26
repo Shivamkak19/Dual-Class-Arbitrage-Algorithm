@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "YI89T9pkYWZDXJVUrk67fx3wtn7zJPcNC4mPJlH74JZm7OqtGAREC2+XZrAjM5DvDpZfpY+b4uFIGBwGf9xR+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shiva\\OneDrive\\Documents\\GitHub\\Projects\\Work\\Dual-Class-Arbitrage-Algorithm\\cs\\cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shiva\\.nuget\\packages\\alpaca.markets\\6.2.1\\alpaca.markets.6.2.1.nupkg.sha512",
+    "C:\\Users\\shiva\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\shiva\\.nuget\\packages\\polly\\7.2.4\\polly.7.2.4.nupkg.sha512",
+    "C:\\Users\\shiva\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

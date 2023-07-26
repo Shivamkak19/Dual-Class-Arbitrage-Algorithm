@@ -1,0 +1,3 @@
+[submodule "alpaca-trade-api-csharp"]
+	path = alpaca-trade-api-csharp
+	url = https://github.com/Shivamkak19/alpaca-trade-api-csharp.git

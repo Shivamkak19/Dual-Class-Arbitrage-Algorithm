@@ -1,0 +1,10 @@
+,class_A,class_A_API_PATH,class_B,class_B_API_PATH,position
+0,ARTNA,https://api.darqube.com/data-api/market_data/quote/ARTNA?token=257ae70a8408461284a148458eb2717f,ARTNB,https://api.darqube.com/data-api/market_data/quote/ARTNB?token=257ae70a8408461284a148458eb2717f,False
+1,BELFA,https://api.darqube.com/data-api/market_data/quote/BELFA?token=257ae70a8408461284a148458eb2717f,BELFB,https://api.darqube.com/data-api/market_data/quote/BELFB?token=257ae70a8408461284a148458eb2717f,False
+2,BRK.A,https://api.darqube.com/data-api/market_data/quote/BRK.A?token=257ae70a8408461284a148458eb2717f,BRK.B,https://api.darqube.com/data-api/market_data/quote/BRK.B?token=257ae70a8408461284a148458eb2717f,False
+3,BIO,https://api.darqube.com/data-api/market_data/quote/BIO?token=257ae70a8408461284a148458eb2717f,BIO.B,https://api.darqube.com/data-api/market_data/quote/BIO.B?token=257ae70a8408461284a148458eb2717f,False
+4,BF.A,https://api.darqube.com/data-api/market_data/quote/BF.A?token=257ae70a8408461284a148458eb2717f,BF.B,https://api.darqube.com/data-api/market_data/quote/BF.B?token=257ae70a8408461284a148458eb2717f,False
+5,STZ,https://api.darqube.com/data-api/market_data/quote/STZ?token=257ae70a8408461284a148458eb2717f,STZ.B,https://api.darqube.com/data-api/market_data/quote/STZ.B?token=257ae70a8408461284a148458eb2717f,False
+6,FOXA,https://api.darqube.com/data-api/market_data/quote/FOXA?token=257ae70a8408461284a148458eb2717f,FOX,https://api.darqube.com/data-api/market_data/quote/FOX?token=257ae70a8408461284a148458eb2717f,False
+7,GEF,https://api.darqube.com/data-api/market_data/quote/GEF?token=257ae70a8408461284a148458eb2717f,GEF.B,https://api.darqube.com/data-api/market_data/quote/GEF.B?token=257ae70a8408461284a148458eb2717f,False
+8,LEN,https://api.darqube.com/data-api/market_data/quote/LEN?token=257ae70a8408461284a148458eb2717f,LEN.B,https://api.darqube.com/data-api/market_data/quote/LEN.B?token=257ae70a8408461284a148458eb2717f,False

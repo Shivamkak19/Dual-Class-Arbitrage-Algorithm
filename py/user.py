@@ -8,8 +8,10 @@ class account():
         # API Authorization Information
         self.key_live = "AK0ZSFQIKNH51OYVKMB2"
         self.secret_live = "h6IJcWc4cK8aWBaeIAc4budigRtqSMvxOyq2J2mB"
+        self.endpoint_live = "https://api.alpaca.markets"
         self.key_paper = "PK1VV2Q66XEYIKECOX7Q"
         self.secret_paper = "G2DThPl44znonvTQ3SpUUugy9ODapUQZ1aj3gVVp"
+        self.endpoint_paper = "https://paper-api.alpaca.markets"
 
         #Toggle Between Live and Paper 
         self.live_status = False
@@ -32,6 +34,14 @@ class account():
 
     def getAccount(self):
         return self.trading_client
+    
+    def getKeys(self):
+        if(self.live_status):
+            keys = [self.endpoint_live, self.key_live, self.secret_live]
+            return keys
+        else:
+            keys = [self.endpoint_paper, self.key_paper, self.secret_paper]
+            return keys
     
 
 

@@ -1,0 +1,3 @@
+{
+    "dotnet.defaultSolution": "alpaca-trade-api-csharp/Alpaca.Markets.sln"
+}

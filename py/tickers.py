@@ -2,6 +2,8 @@ import pandas as pd
 import requests
 import datetime
 
+# TODO: implement singleton for tickers() class
+
 # List for each dual-class share
 class tickers():
 
@@ -23,6 +25,7 @@ class tickers():
         self.stock_df["position"] = False
 
         self.setAPIPath()
+        self.dailyOpen()
         self.updateValues()
 
     # Set API links upon initialization
@@ -48,10 +51,10 @@ class tickers():
             path += api_auth
             classB_list.append(path)
 
-        df = pd.DataFrame({"API_Path_A": classA_list})
+        df = pd.DataFrame({"API_path_A": classA_list})
         self.stock_df.update(df)
 
-        df = pd.DataFrame({"API_Path_B": classB_list})
+        df = pd.DataFrame({"API_path_B": classB_list})
         self.stock_df.update(df)
     
     # Set opening values for trading day
@@ -63,14 +66,13 @@ class tickers():
 
         for link in self.stock_df["API_path_A"]:
             r = requests.get(link).json()
-            price_A = r["previous_close"]
+            price_A = r['previous_close']
             open_A.append(price_A)
         
         for link in self.stock_df["API_path_B"]:
             r = requests.get(link).json()
-            price_B = r["previous_close"]
+            price_B = r['previous_close']
             open_B.append(price_B)
-
 
         for i in range(len(open_A)):
             margin = abs(open_A[i] - open_B[i])
@@ -106,10 +108,12 @@ class tickers():
             price_A = r["price"]
             time_A = r["timestamp"]
 
-            # convert from unix time to datetime
-            time_A = datetime.datetime.fromtimestamp(time_A)
+            # Convert ms to s
+            time_A = time_A / 1000 
 
-            updateTime_A.append(time_A)
+            date = self.toDateTime(time_A)
+            
+            updateTime_A.append(date)
             currentPrice_A.append(price_A)
 
         for link in self.stock_df["API_path_B"]:
@@ -119,10 +123,16 @@ class tickers():
             price_B = r["price"]
             time_B = r["timestamp"]
 
-            # convert from unix time to datetime
-            time_B = datetime.datetime.fromtimestamp(time_B)
+            # Convert ms to s
+            time_B = time_B / 1000 
 
-            updateTime_B.append(time_B)
+            date = self.toDateTime(time_B)
+            
+            # debugging
+            # print(type(date))
+            # print(date)
+
+            updateTime_B.append(date)
             currentPrice_B.append(price_B)
 
 
@@ -142,6 +152,19 @@ class tickers():
                            "current_price_margin": currentMargin})
         
         self.stock_df.update(df)
+    
+    def toDateTime(self, unixTime):
+
+        # convert from unix time to datetime
+        date = datetime.datetime.fromtimestamp(unixTime)
+
+        # Format datetime as a string in the desired format
+        date = date.strftime('%m%d%H%M')
+
+        # Convert the formatted string to an integer
+        date = int(date)
+
+        return date
 
 
     def getStock(self):
@@ -152,7 +175,11 @@ class tickers():
 
 test = tickers()
 df = test.getStock()
-test.setJSON()
+test.updateValues()
+test.dailyOpen()
 print(df.head())
-test.setJSON()
+test.updateValues()
+print("gkuh")
+print(df["update_time_B"][0])
+print(df["update_time_A"][0])
 

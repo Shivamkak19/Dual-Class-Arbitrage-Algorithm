@@ -20,12 +20,12 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shivamkak19/Dual-Class-Arbitrage-Algorithm">
-    <img src="images/dcs.png" alt="dual-class shares to monitor">
+    <img src="images/shares.png" alt="dual-class shares to monitor">
   </a>
 
 <h3 align="center">Project Description</h3>
 
-This algorithm takes advantage of an arbitrage between certain shares that hold nearly identical market caps. Specifically, it identifies price discrepencies between publicly-traded shares in a dual-class structure and simultaneously marks both a short and a long position (for an example of dual-class structure, Google Class A: GOOG vs Google Class B: GOOGL, Berkshire Hathaway Class A: BERK.A, Berkshire Hathaway Class B: BERK.B). The underlying assumption is that the similar market caps of the dual-class shares will eventually drive share prices to converge, meaning either the long or the short will be able to return a profit. 
+This algorithm takes advantage of an arbitrage between certain dual-class shares that hold nearly identical market caps. Specifically, it identifies price discrepencies between publicly-traded shares in a dual-class structure and simultaneously marks both a short and a long position (for an example of dual-class structure, Google Class A: GOOG vs Google Class B: GOOGL, Berkshire Hathaway Class A: BERK.A, Berkshire Hathaway Class B: BERK.B). The underlying assumption is that the similar market caps of the dual-class shares will eventually drive share prices to converge, meaning either the long or the short will be able to return a profit. 
 
 Notes: I have hard-coded a list of popular dual-class shares in "shares.csv". This list can be adjusted to preference. Additionally, an account is recognized as a Pattern Day Trader if it makes 4 day trades in a 5 day period with an account balance < $25,000. For learning purposes, the scheduler is only set up to run trades within this strict limit.  
 

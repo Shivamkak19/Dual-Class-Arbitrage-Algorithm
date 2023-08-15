@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shivamkak19/Dual-Class-Arbitrage-Algorithm">
-    <img src="images/shares.png" alt="dual-class shares to monitor">
+    <img src="images/dcs.png" alt="dual-class shares to monitor">
   </a>
 
 <h3 align="center">Project Description</h3>

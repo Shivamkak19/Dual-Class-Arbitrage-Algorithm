@@ -68,7 +68,7 @@ Notes: I have hard-coded a list of popular dual-class shares in "shares.csv". Th
 
 ### Built With
 
-* [![Alpaca-Py][alpaca-py]][alpaca-py-url]
+* [![alpaca-Py][alpaca-py]][alpaca-py-url]
 * [![Darqube][darqube]][darqube-url]
 * [![Scheduler][scheduler]][scheduler-url]
 * [![Pandas][pandas]][pandas-url]
@@ -86,7 +86,7 @@ Below, the set-up process is listed to run this project on your local machine. N
 
 To run this project, you must download the latest version of the pip installer
 
-* pip
+* 
   ```sh
   pip install --upgrade pip
   ```

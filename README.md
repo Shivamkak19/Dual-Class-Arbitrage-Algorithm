@@ -113,22 +113,25 @@ To run this project, you must download the latest version of the pip installer
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once the source code is uploaded onto an Arduino Uno, the user must strap their finger into the heart rate monitor finger clasp. The LED panel will display important information regarding REM sleep cycle count and current heart rate. 
+This project was designed as a learning project for the purpose of exposure into the process of developing trading algorithms. Any usage must be compliant with Pattern Day Trading rules, and failure to comply to these standards will result in the user's Alpaca client being flagged and banned. Feel free to tinker with this algorithm and explore. Do make sure to replace the dummy text with your unique Client ID and secret key. 
 
-The alarm will ring after the input REM cycle count has elapsed. 
-
-![Product Name Screen Shot][product-screenshot2]
-![Product Name Screen Shot][product-screenshot3]
+<!-- ![Product Name Screen Shot][product-screenshot2]
+![Product Name Screen Shot][product-screenshot3] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Configure Circuit Design
-- [ ] Design algorithm for locating REM sleep cycles
-- [ ] Collect user input for desired quantity of REM sleep cycles
-    - [ ] Set alarm accordingly
+- [ ] Designate target dual-class shares
+- [ ] Authenticate Alpaca API with Client ID and secret
+- [ ] Perform HTTP GET/POST requests to fetch information from Alpaca Trading Client
+    - [ ] Set up functionality to order long position, short position, sell open positions, and cancel pending positions
+- [ ] Perform GET requests to Darqube API for live share pricing information
+- [ ] Create algorithm for margins at which to buy/sell short and long positions
+- [ ] Liquidate all holdings 5 minutes before closing bell
+- [ ] Set up Python Scheduler to send necessary API calls every 30 sec, open hours, Mon - Fri
+- [ ] Create simple user interface to manage holdings via Streamlit
 
 See the [open issues](https://github.com/Shivamkak19/Dual-Class-Arbitrage-Algorithm/issues) for a full list of proposed features (and known issues).
 
@@ -151,7 +154,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
